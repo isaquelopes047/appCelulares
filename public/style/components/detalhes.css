@@ -1,0 +1,195 @@
+
+
+.containerAll{
+    width: 100%;
+    height: calc(100vh - 120px);
+}
+
+.containerTitleReg{
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    background: rgb(32,52,94);
+    background: linear-gradient(270deg, rgba(32,52,94,1) 0%, rgba(255,255,255,0.938813025210084) 42%, rgba(255,255,255,1) 50%, rgba(255,255,255,0.8323704481792717) 57%, rgba(32,52,94,1) 100%);
+}
+
+.containerTitleReg p{
+    font-size: 30px;
+    padding: 10px;
+    color: rgb(102, 101, 101);
+    animation: animate 0.2s linear;
+    font-weight: 600;
+}
+
+@keyframes animate {
+    0% {
+        font-size: 0px;
+    }
+    100% {
+        font-size: 30px;
+    }
+}
+
+.containerMainInfos{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    margin-top: 60px;
+}
+.ccontainerContentUm{
+    width: 50%;
+    height: auto;
+}
+.containerInfo{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.containerInfo button{
+    margin-left:30px;
+}
+/* BOTÃO DE EXCLUIR */
+.containerInfo button:nth-child(1){
+    background-color: rgb(218, 21, 21);
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+/* BOTÃO DE EDITAR */
+.containerInfo button:nth-child(2){
+    background-color: rgb(19, 69, 207);
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+/* BOTÃO DE IMPRIMIR */
+.containerInfo button:nth-child(3){
+    background-color: rgb(162, 177, 31);
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.containerLabel{
+    width: 50%;
+    height: 50px;
+    background-color: aquamarine;
+}
+.containerInfoResult{
+    width: 50%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+.style{
+    font-style: italic;
+}
+.styleBlock{
+    background: rgb(255,255,255);
+    background: linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(208,208,208,1) 100%);
+    border-bottom: 1px solid #ccc;
+}
+.containerInfoResult p{
+    font-size: 15px;
+    padding: 5px;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.ccontainerContentDois{
+    width: 50%;
+    height: 300px;
+}
+
+/* MODAL DELETE */
+.modelDelete{
+    margin: 0;
+    position: absolute;
+    width: calc(100vw - 80px);
+    height: calc(100vh - 120px);
+    display: none;
+    background-color: rgba(204, 204, 204, 0.479);
+
+}
+.containerContentDell{
+    width: 600px;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    margin:100px auto;
+    border-radius: 5px;
+	-webkit-animation: scale-up-ver-center 0.1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	animation: scale-up-ver-center 0.1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes scale-up-ver-center {
+    0% {
+      -webkit-transform: scaleY(0.4);
+              transform: scaleY(0.4);
+    }
+    100% {
+      -webkit-transform: scaleY(1);
+              transform: scaleY(1);
+    }
+  }
+  @keyframes scale-up-ver-center {
+    0% {
+      -webkit-transform: scaleY(0.4);
+              transform: scaleY(0.4);
+    }
+    100% {
+      -webkit-transform: scaleY(1);
+              transform: scaleY(1);
+    }
+  }
+
+.containerTitle{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 40px;
+}
+.containerTitle p:nth-child(2){
+    font-size: 38px;
+    font-weight: 600;
+    color: rgb(75, 75, 75);
+}
+.containerTitle p:nth-child(3){
+    font-size: 20px;
+    color: rgb(75, 75, 75);
+}
+
+.containerButtonDell{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.containerButtonDell button{
+    border: none;
+    padding: 13px;
+    font-weight: 600;
+    width: 200px;
+}
+.containerButtonDell button:nth-child(1){
+    background-color: #ce1717;
+    color: #fff;
+    margin-right: 5px;
+}
+.containerButtonDell button:nth-child(2){
+    background-color: #1e77cf;
+    color: #fff;
+    margin-left: 5px;
+}

@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.containerAllPrincipal{
+    display: flex;
+}
+
+.containerPrincipal{
+    width: calc(100vw - 80px);
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.containerHeaderMain{
+    width: 100%;
+    height: 120px;
+}
+
+.containerBodyMain{
+    width: 100%;
+    height: calc(100vh - 120px);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.containerContent{
+    width: 94vw;
+    height: 80vh;
+    margin-top: 30px;
+    overflow-y: scroll;
+    background-image: url('/public/img/astronaut-flat-line-art-design-illustration_460848-2313.png');
+    background-repeat: no-repeat;
+    background-size: 900px;
+    background-position-x: 400px;
+}

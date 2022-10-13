@@ -1,0 +1,11 @@
+.telaQuebrada {
+    background-color: rgb(207, 29, 23);
+    text-align: center;
+    border-radius: 10px;
+}
+
+.padrao {
+    background-color: rgb(25, 136, 187);
+    text-align: center;
+    border-radius: 10px;
+}

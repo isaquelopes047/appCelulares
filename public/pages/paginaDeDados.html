@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../style/pagesStyle/layoutMain.css">
+    <link rel="stylesheet" href="../style/components/manulateral.css">
+    <link rel="stylesheet" href="../style/components/tabela.css">
+    <link rel="stylesheet" href="../style/components/status.css">
+    <link rel="stylesheet" href="../style/components/menuSuperior.css">
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Painel</title>
+</head>
+
+<body>
+
+    <div class="containerAllPrincipal">
+
+        <nav class="containerPrincipalNav">
+            <a href="./paginaDeDados.html">
+                <div class="containerMenu">
+                    <img src="../icons/icons8-criptografia-de-dados-30.png" alt="">
+                    <p>Registros</p>
+                </div>
+            </a>
+            <a href="./paginaCriarRegistro.html">
+                <div class="containerMenu">
+                    <img src="../icons/icons8-adicionar-a-lista-48.png" alt="">
+                    <p>Cadastrar</p>
+                </div>
+            </a>
+            <a href="">
+                <div class="containerMenu">
+                    <img src="../icons/icons8-visualizar-arquivo-30.png" alt="">
+                    <p>Buscar</p>
+                </div>
+            </a>
+            <a href="">
+                <div class="containerMenu">
+                    <img src="../icons//icons8-gráfico-de-barras-do-cloud-30.png" alt="">
+                    <p>Resumo</p>
+                </div>
+            </a>
+        </nav>
+
+        <main>
+            <div class="containerPrincipal">
+                <div class="containerHeaderMain">
+                    <div class="fixed-top">
+                        <header class="topbar">
+                            <div class="container">
+                                <div class="row">
+                                    <!-- social icon-->
+                                    <div class="col-sm-12">
+                                        <ul class="social-network">
+                                            <li><a class="waves-effect waves-dark" href="#"><i
+                                                        class="fa fa-facebook"></i></a></li>
+                                            <li><a class="waves-effect waves-dark" href="#"><i
+                                                        class="fa fa-twitter"></i></a></li>
+                                            <li><a class="waves-effect waves-dark" href="#"><i
+                                                        class="fa fa-linkedin"></i></a></li>
+                                            <li><a class="waves-effect waves-dark" href="#"><i
+                                                        class="fa fa-pinterest"></i></a></li>
+                                            <li><a class="waves-effect waves-dark" href="#"><i
+                                                        class="fa fa-google-plus"></i></a></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </header>
+                        <nav class="navbar navbar-expand-lg navbar-dark mx-background-top-linear">
+                            <div class="container">
+                                <a class="navbar-brand" href="index.html" style="text-transform: uppercase;">
+                                    REGISTROS DE ASSISTENCIAS</a>
+                                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                    data-target="#navbarResponsive" aria-controls="navbarResponsive"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarResponsive">
+
+                                    <ul class="navbar-nav ml-auto">
+
+                                        <li class="nav-item active">
+                                            <a class="nav-link" href="#">Ocorrencias de Patrimonio
+                                                <span class="sr-only">(current)</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Relatorio Nobreak</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <div class="containerBodyMain">
+                    <div class="containerContent">
+                        <table id="table">
+                            <thead>
+                                <th>Id</th>
+                                <th>Tecnico</th>
+                                <th>Nome do funcionario</th>
+                                <th>Modelo do aparelho</th>
+                                <th>N° do aparelho</th>
+                                <th>N° do celular</th>
+                                <th>Problema identificado</th>
+                                <th>Detalhes</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="../JS/API/get.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.containerPrincipalNav{
+    width: 150px;
+    height: 100vh;
+    background-color:rgba(231, 231, 231, 0.349);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.containerPrincipalNav a{
+    text-decoration: none;
+    color: black;
+}
+
+.containerMenu{
+    width: 80px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+.containerMenu:hover{
+    background-color: rgb(238, 238, 238);
+}
+
+.containerMenu p{
+    margin: 5px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.containerMenu img{
+    width: 30px;
+}

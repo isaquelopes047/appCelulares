@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+#table {
+    width: 100%;
+    background-color: rgba(252, 252, 252, 0.911);
+}
+
+#table th{
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 10px;
+    text-align: start;
+}
+#table th:nth-child(8), #table th:nth-child(1){
+    text-align: center;
+}
+
+#table td {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(43, 43, 43);
+    font-size: 15px;
+    border-bottom: 1px solid rgba(204, 204, 204, 0.308);
+    /* border-right: 1px solid #ccc; */
+}
+
+#table td:nth-child(1){
+    text-align: center;
+    background-color: green;
+    color: #fff;
+    border-radius: 3px;
+}
+
+#table td:nth-child(2){
+    text-align: center;
+}
+
+#table td:nth-child(2){
+    width: 250px;
+
+}
+
+#table td:nth-child(7){
+    color: #fff;
+}
+
+#table tr:hover {
+    -webkit-box-shadow: 2px 9px 11px -11px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 9px 11px -11px rgba(0, 0, 0, 0.75);
+    box-shadow: 2px 9px 11px -11px rgba(0, 0, 0, 0.75);
+}
+
+#table a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

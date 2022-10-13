@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../style/pagesStyle/layoutMain.css">
+    <link rel="stylesheet" href="../style/components/manulateral.css">
+    <link rel="stylesheet" href="../style/components/menuSuperior.css">
+    <link rel="stylesheet" href="../style/components/detalhes.css">
+    <link rel="stylesheet" href="../style/components/alterarRegistro.css">
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="containerAllPrincipal">
+
+        <nav class="containerPrincipalNav">
+            <a href="./paginaDeDados.html">
+                <div class="containerMenu">
+                    <img src="../icons/icons8-criptografia-de-dados-30.png" alt="">
+                    <p>Registros</p>
+                </div>
+            </a>
+            <a href="./paginaCriarRegistro.html">
+                <div class="containerMenu">
+                    <img src="../icons/icons8-adicionar-a-lista-48.png" alt="">
+                    <p>Cadastrar</p>
+                </div>
+            </a>
+            <a href="">
+                <div class="containerMenu">
+                    <img src="../icons/icons8-visualizar-arquivo-30.png" alt="">
+                    <p>Buscar</p>
+                </div>
+            </a>
+            <a href="">
+                <div class="containerMenu">
+                    <img src="../icons//icons8-gráfico-de-barras-do-cloud-30.png" alt="">
+                    <p>Resumo</p>
+                </div>
+            </a>
+        </nav>
+
+        <main>
+            <div class="containerPrincipal">
+                <div class="containerHeaderMain">
+                    <div class="fixed-top">
+                        <header class="topbar">
+                            <div class="container">
+                                <div class="row">
+                                    <!-- social icon-->
+                                    <div class="col-sm-12">
+                                        <ul class="social-network">
+                                            <li><a class="waves-effect waves-dark" href="#"><i
+                                                        class="fa fa-facebook"></i></a></li>
+                                            <li><a class="waves-effect waves-dark" href="#"><i
+                                                        class="fa fa-twitter"></i></a></li>
+                                            <li><a class="waves-effect waves-dark" href="#"><i
+                                                        class="fa fa-linkedin"></i></a></li>
+                                            <li><a class="waves-effect waves-dark" href="#"><i
+                                                        class="fa fa-pinterest"></i></a></li>
+                                            <li><a class="waves-effect waves-dark" href="#"><i
+                                                        class="fa fa-google-plus"></i></a></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </header>
+                        <nav class="navbar navbar-expand-lg navbar-dark mx-background-top-linear">
+                            <div class="container">
+                                <a class="navbar-brand" href="index.html" style="text-transform: uppercase;">
+                                    DETALHES DE REGISTRO</a>
+                                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                    data-target="#navbarResponsive" aria-controls="navbarResponsive"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarResponsive">
+
+                                    <ul class="navbar-nav ml-auto">
+
+                                        <li class="nav-item active">
+                                            <a class="nav-link" href="#">Ocorrencias de Patrimonio
+                                                <span class="sr-only">(current)</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Relatorio Nobreak</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <div class="containerBodyMain">
+                    <div class="containerAlteral">
+
+                        <form action="" method="PATCH">
+                            <div class="containerFormAlterar">
+                                <div class="containerInput">
+                                    <div class="alterar">
+                                        <p>Tecnico responsavel</p>
+                                    </div>
+                                    <div class="alterar">
+                                        <select id="nomeTecnico" name="modeloCelularAntigo" required>
+                                            <option value="Motorola Moto E5">Isaque Lopes de Souza</option>
+                                            <option value="Anderson Davidson de Moura">Anderson Davidson de Moura</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="containerInput">
+                                    <div class="alterar">
+                                        <p>Nome do Funcionario</p>
+                                    </div>
+                                    <div class="alterar">
+                                        <input type="text" id="nomeFuncionario">
+                                    </div>
+                                </div>
+                                <div class="containerInput">
+                                    <div class="alterar">
+                                        <p>Modelo do aparelho antigo</p>
+                                    </div>
+                                    <div class="alterar" id="nomeFuncionario">
+                                        <select id="modeloCelularAntigo" name="modeloCelularAntigo" required>
+                                            <option value="Motorola Moto E5">Motorola Moto E5</option>
+                                            <option value="Motorola Moto e(6) plus">Motorola Moto e(6) plus</option>
+                                            <option value="Motorola Moto e20">Motorola Moto e20</option>
+                                            <option value="Motorola Moto e6 play">Motorola Moto e6 play</option>
+                                            <option value="Motorola Moto e6s">Motorola Moto e6s</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="containerInput">
+                                    <div class="alterar">
+                                        <p>Numero do patromonio antigo</p>
+                                    </div>
+                                    <div class="alterar">
+                                        <input type="text" id="numeroPatrimonioAntigo">
+                                    </div>
+                                </div>
+                                <div class="containerInput">
+                                    <div class="alterar">
+                                        <p>Numero do celular antigo</p>
+                                    </div>
+                                    <div class="alterar">
+                                        <input type="text" id="numeroDeCelularAntigo">
+                                    </div>
+                                </div>
+                                <div class="containerInput">
+                                    <div class="alterar">
+                                        <p>Problema identificado</p>
+                                    </div>
+                                    <div class="alterar">
+                                        <select id="problemaIdentificado" name="problemaIdentificado" required>
+                                            <option value="Bateria viciada">Bateria viciada</option>
+                                            <option value="Bateria estufada">Bateria estufada</option>
+                                            <option value="Troca de Chip">Troca de Chip</option>
+                                            <option value="Conector estragado">Conector estragado</option>
+                                            <option value="Sem espaço de armazenamento">Sem espaço de armazenamento</option>
+                                            <option value="Atualização Pulsus">Atualização Pulsus</option>
+                                            <option value="GPS travando">GPS travando</option>
+                                            <option value="Não liga">Não liga</option>
+                                            <option value="Problema no Audio">Problema no Audio</option>
+                                            <option value="S.O travando">S.O travando</option>
+                                            <option value="Tela quebrada">Tela quebrada</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="containerInput">
+                                    <div class="alterar"></div>
+                                    <div class="alterar"></div>
+                                </div>
+
+                                <div class="containerInput">
+                                    <div class="alterar">
+                                        <p>Modelo do aparelho novo</p>
+                                    </div>
+                                    <div class="alterar">
+                                        <select id="modeloCelularNovo" name="modeloCelularNovo" required>
+                                            <option value="Motorola Moto E5">Motorola Moto E5</option>
+                                            <option value="Motorola Moto e(6) plus">Motorola Moto e(6) plus</option>
+                                            <option value="Motorola Moto e20">Motorola Moto e20</option>
+                                            <option value="Motorola Moto e6 play">Motorola Moto e6 play</option>
+                                            <option value="Motorola Moto e6s">Motorola Moto e6s</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="containerInput">
+                                    <div class="alterar">
+                                        <p>Numero do patrimonio novo</p>
+                                    </div>
+                                    <div class="alterar">
+                                        <input type="text" id="numeroPatrimonioNovo">
+                                    </div>
+                                </div>
+                                <div class="containerInput">
+                                    <div class="alterar">
+                                        <p>Numero do celular novo </p>
+                                    </div>
+                                    <div class="alterar">
+                                        <input type="text" id="numeroDeCelularNovo">
+                                    </div>
+                                </div>
+                                <div class="containerInput">
+                                    <div class="alterar">
+                                        <p>Observação</p>
+                                    </div>
+                                    <div class="alterar">
+                                        <textarea id="observacao" name="observacao" rows="2" cols="50" placeholder="Digite aqui uma observação ou procedimento realizado" required></textarea>
+                                    </div>
+                                </div>
+                                <div class="containerInput">
+                                    <div class="alterar buttonsAlterar">
+                                        <button class="alterarContent">
+                                            <img src="../icons/icons8-salvar-30.png" alt="">
+                                            Salvar
+                                        </button>
+                                        <button class="voltarAlterar">Voltar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="modelDelete">
+                        <div class="containerContentDell">
+                            <div class="containerTitle">
+                                <img src="../img/Screenshot_1.png" alt="">
+                                <p>Tem certeza?</p>
+                                <p>Esse registro será apagado permanentemente</p>
+                            </div>
+                            <div class="containerButtonDell">
+                                <button class="dellReg">Sim! Deletar</button>
+                                <button class="CloseModal">Cancelar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="containerAll">
+                        <div class="containerTitleReg">
+                            <p class="titleReg"></p>
+                        </div>
+                        <div class="containerMainInfos">
+                            <div class="ccontainerContentUm">
+                                <div class="containerInfo">
+                                    <div class="containerInfoResult styleBlock">
+                                        <p for="">Tecnico responsavel</label>
+                                    </div>
+                                    <div class="containerInfoResult">
+                                        <p class="nomeTecnico style"></p>
+                                    </div>
+                                </div>
+                                <div class="containerInfo">
+                                    <div class="containerInfoResult styleBlock">
+                                        <p for="">Nome do Funcionario</label>
+                                    </div>
+                                    <div class="containerInfoResult">
+                                        <p class="nomeFuncionario style"></p>
+                                    </div>
+                                </div>
+                                <div class="containerInfo">
+                                    <div class="containerInfoResult styleBlock">
+                                        <p for="">Model do aparelho antigo</label>
+                                    </div>
+                                    <div class="containerInfoResult">
+                                        <p class="modeloCelularAntigo style"></p>
+                                    </div>
+                                </div>
+                                <div class="containerInfo">
+                                    <div class="containerInfoResult styleBlock">
+                                        <p for="">Numero do patrimono Antigo</label>
+                                    </div>
+                                    <div class="containerInfoResult">
+                                        <p class="numeroPatrimonioAntigo style"></p>
+                                    </div>
+                                </div>
+                                <div class="containerInfo">
+                                    <div class="containerInfoResult styleBlock">
+                                        <p for="">Numero do celular antigo</label>
+                                    </div>
+                                    <div class="containerInfoResult">
+                                        <p class="numeroDeCelularAntigo style"></p>
+                                    </div>
+                                </div>
+                                <div class="containerInfo">
+                                    <div class="containerInfoResult styleBlock">
+                                        <p for="">Problema identificado</label>
+                                    </div>
+                                    <div class="containerInfoResult">
+                                        <p class="problemaIdentificado style"></p>
+                                    </div>
+                                </div>
+                                <div class="containerInfo">
+                                    <div class="containerInfoResult styleBlock">
+
+                                    </div>
+                                    <div class="containerInfoResult">
+
+                                    </div>
+                                </div>
+                                <div class="containerInfo">
+                                    <div class="containerInfoResult styleBlock">
+                                        <p for="">Modelo do aparelho novo</label>
+                                    </div>
+                                    <div class="containerInfoResult">
+                                        <p class="modeloCelularNovo style"></p>
+                                    </div>
+                                </div>
+                                <div class="containerInfo">
+                                    <div class="containerInfoResult styleBlock">
+                                        <p for="">Numero do patrimonio novo</label>
+                                    </div>
+                                    <div class="containerInfoResult">
+                                        <p class="numeroPatrimonioNovo style"></p>
+                                    </div>
+                                </div>
+                                <div class="containerInfo">
+                                    <div class="containerInfoResult styleBlock">
+                                        <p for="">Numero do celular novo</label>
+                                    </div>
+                                    <div class="containerInfoResult">
+                                        <p class="numeroDeCelularNovo style"></p>
+                                    </div>
+                                </div>
+                                <div class="containerInfo">
+                                    <div class="containerInfoResult styleBlock">
+                                        <p for="">Observação</label>
+                                    </div>
+                                    <div class="containerInfoResult">
+                                        <p class="observacao style"></p>
+                                    </div>
+                                </div>
+                                <div class="containerInfo">
+                                    <div class="containerInfoResult styleBlock">
+                                        <p for="">Data</label>
+                                    </div>
+                                    <div class="containerInfoResult">
+                                        <p class="dataEHora style"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ccontainerContentDois">
+                                <div class="containerInfo">
+                                    <button class="openModelDelete">Excluir registro</button>
+                                    <button class="openModalAlterar">Alterar registro</button>
+                                    <button>Imprimir</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <script src="../JS/scripts/modalDell.js"></script>
+            <script src="../JS/scripts/modalAlterar.js"></script>
+            <script src="../JS/API/getPorId.js"></script>
+            <script src="../JS/API/delete.js"></script>
+            <script src="../JS/API/alterar.js"></script>
+</body>
+
+</html>

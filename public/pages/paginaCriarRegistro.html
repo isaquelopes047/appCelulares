@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../style/pagesStyle/layoutMain.css">
+    <link rel="stylesheet" href="../style/components/manulateral.css">
+    <link rel="stylesheet" href="../style/components/containerPost.css">
+    <link rel="stylesheet" href="../style/components/menuSuperior.css">
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <title>Painel</title>
+</head>
+
+<body>
+
+    <div class="containerAllPrincipal">
+
+        <nav class="containerPrincipalNav">
+            <a href="./paginaDeDados.html">
+                <div class="containerMenu">
+                    <img src="../icons/icons8-criptografia-de-dados-30.png" alt="">
+                    <p>Registros</p>
+                </div>
+            </a>
+            <a href="./paginaCriarRegistro.html">
+                <div class="containerMenu">
+                    <img src="../icons/icons8-adicionar-a-lista-48.png" alt="">
+                    <p>Cadastrar</p>
+                </div>
+            </a>
+            <a href="">
+                <div class="containerMenu">
+                    <img src="../icons/icons8-visualizar-arquivo-30.png" alt="">
+                    <p>Buscar</p>
+                </div>
+            </a>
+            <a href="">
+                <div class="containerMenu">
+                    <img src="../icons//icons8-gráfico-de-barras-do-cloud-30.png" alt="">
+                    <p>Resumo</p>
+                </div>
+            </a>
+        </nav>
+
+        <main>
+            <div class="containerPrincipal">
+                <div class="containerHeaderMain">
+                    <div class="fixed-top">
+                        <header class="topbar">
+                            <div class="container">
+                                <div class="row">
+                                    <!-- social icon-->
+                                    <div class="col-sm-12">
+                                        <ul class="social-network">
+                                            <li><a class="waves-effect waves-dark" href="#"><i
+                                                        class="fa fa-facebook"></i></a></li>
+                                            <li><a class="waves-effect waves-dark" href="#"><i
+                                                        class="fa fa-twitter"></i></a></li>
+                                            <li><a class="waves-effect waves-dark" href="#"><i
+                                                        class="fa fa-linkedin"></i></a></li>
+                                            <li><a class="waves-effect waves-dark" href="#"><i
+                                                        class="fa fa-pinterest"></i></a></li>
+                                            <li><a class="waves-effect waves-dark" href="#"><i
+                                                        class="fa fa-google-plus"></i></a></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </header>
+                        <nav class="navbar navbar-expand-lg navbar-dark mx-background-top-linear">
+                            <div class="container">
+                                <a class="navbar-brand" href="index.html" style="text-transform: uppercase;">
+                                    CADASTRAR NOVO REGISTRO</a>
+                                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                    data-target="#navbarResponsive" aria-controls="navbarResponsive"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarResponsive">
+
+                                    <ul class="navbar-nav ml-auto">
+
+                                        <li class="nav-item active">
+                                            <a class="nav-link" href="#">Ocorrencias de Patrimonio
+                                                <span class="sr-only">(current)</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Relatorio Nobreak</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <div class="containerBodyMain">
+                    <div class="containerLeft">
+                        <div class="containerTitleForm">
+                            <p>CADASTRO DE ASSISTENCIA</p>
+                        </div>
+                        <div class="containerForm">
+                            <form class="form" id="form" method="POST">
+
+                                <!-- SEC 1 -->
+                                <div class="containerInfos">
+                                    <div class="containerAllInfos">
+                                        <div class="flexInputs">
+                                            <label for="">Nome do técnico</label>
+                                            <select id="nomeTecnico" name="nomeTecnico" required>
+                                                <option value="Isaque Lopes de Souza">Isaque Lopes de Souza</option>
+                                                <option value="Anderson Moura Davidson">Anderson Moura Davidson</option>
+                                            </select>
+                                        </div>
+                                        <div class="flexInputs">
+                                            <label for="">Nome do funcionário</label>
+                                            <input type="text" name="nomeFuncionario" id="nomeFuncionario" required>
+                                        </div>
+                                        <div class="flexInputs">
+                                            <label for="">Modelo do aparelho antigo</label>
+                                            <select id="modeloCelularAntigo" name="modeloCelularAntigo" required>
+                                                <option value="Motorola Moto E5">Motorola Moto E5</option>
+                                                <option value="Motorola Moto e(6) plus">Motorola Moto e(6) plus</option>
+                                                <option value="Motorola Moto e20">Motorola Moto e20</option>
+                                                <option value="Motorola Moto e6 play">Motorola Moto e6 play</option>
+                                                <option value="Motorola Moto e6s">Motorola Moto e6s</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- SEC 2 -->
+                                <div class="containerInfos">
+                                    <div class="containerAllInfos">
+                                        <div class="flexInputs">
+                                            <label for="">N° patrimônio Antigo</label>
+                                            <input type="text" name="numeroPatrimonioAntigo" id="numeroPatrimonioAntigo" required>
+                                        </div>
+                                        <div class="flexInputs">
+                                            <label for="">N° celular Antigo</label>
+                                            <input type="text" name="telefone" id="telefone" class="numeroDeCelularAntigo" placeholder="Digite um número de telefone" maxlength="15" />
+                                        </div>
+                                        <div class="flexInputs">
+                                            <label for="">Problema identificado</label>
+                                            <select id="problemaIdentificado" name="problemaIdentificado" required>
+                                                <option value="Bateria viciada">Bateria viciada</option>
+                                                <option value="Bateria estufada">Bateria estufada</option>
+                                                <option value="Troca de Chip">Troca de Chip</option>
+                                                <option value="Conector estragado">Conector estragado</option>
+                                                <option value="Sem espaço de armazenamento">Sem espaço de armazenamento</option>
+                                                <option value="Atualização Pulsus">Atualização Pulsus</option>
+                                                <option value="GPS travando">GPS travando</option>
+                                                <option value="Não liga">Não liga</option>
+                                                <option value="Problema no Audio">Problema no Audio</option>
+                                                <option value="S.O travando">S.O travando</option>
+                                                <option value="Tela quebrada">Tela quebrada</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- SEC 3 -->
+                                <div class="containerInfos">
+                                    <div class="containerAllInfos">
+                                        <div class="flexInputs">
+                                            <label for="">Modelo do aparelho Novo</label>
+                                            <select id="modeloCelularNovo" name="modeloCelularNovo" required>
+                                                <option value="Motorola Moto E5">Motorola Moto E5</option>
+                                                <option value="Motorola Moto e(6) plus">Motorola Moto e(6) plus</option>
+                                                <option value="Motorola Moto e20">Motorola Moto e20</option>
+                                                <option value="Motorola Moto e6 play">Motorola Moto e6 play</option>
+                                                <option value="Motorola Moto e6s">Motorola Moto e6s</option>
+                                            </select>
+                                        </div>
+                                        <div class="flexInputs">
+                                            <label for="">N° Patrimônio Novo</label>
+                                            <input type="text" name="numeroPatrimonioNovo" id="numeroPatrimonioNovo" required>
+                                        </div>
+                                        <div class="flexInputs">
+                                            <label for="">N° celular Novo</label>
+                                            <input type="text" name="telefone" id="telefone" class="numeroDeCelularNovo" placeholder="Digite um número de telefone" maxlength="15" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- SEC 4 -->
+                                <div class="containerInfos cem">
+                                    <div class="containerAllInfos">
+                                        <div class="flexInputs full">
+                                            <label for="">Observação</label>
+                                            <textarea id="observacao" name="observacao" rows="5" cols="50" placeholder="Digite aqui uma observação ou procedimento realizado" required></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- SEC 5 -->
+                                <div class="containerInfos">
+                                    <div class="containerAllInfos">
+                                        <div class="flexInputs buttonPost top">
+                                            <button type="submit" value="Add"> Cadastrar </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="containerInfos">
+                                    <div class="containerAllInfos">
+                                        <div class="alertContainer">
+                                            <img src="../img/alert.png" alt="">
+                                            <p>Atenção, ao selecionar essa opção, cobrar o concerto da tela do patrimonio danificado</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="../JS/API/post.js"></script>
+    <script src="../JS/scripts/alertaTela.js"></script>
+    <script src="../JS/scripts/ipnutNumero.js"></script>
+</body>
+
+</html>

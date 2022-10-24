@@ -1,201 +1,80 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@300&display=swap');
-
-.containerAllSucess{
-    width: 100vw;
-    height: calc(100vh - 120px);
-    display: flex;
-    flex-direction: column;
+a{
+    text-decoration: none;
+    color: #fff;
 }
 
-.success{
-    width: 100%;
-}
-.containerImg{
-    height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.containerImg P{
-    font-family: 'Poppins', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 600;
-    font-size: 22px;
-}
-.imgContent{
+.containerInfoSucess{
     width: 600px;
-    height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.imgContent img{
-    width: 250px;
+    height: 400px;
+	-webkit-animation: scale-up-hor-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-hor-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
-.containerButtonReturn{
-    height: 100px;
+.meio{
+    width: 100%;
+    height: 200px;
+}
+
+.containerImg{
+    background-color:#36c69c;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
 }
-.containerButtonReturn button{
-    padding: 20px;
+
+.containerInfo{
+    text-align: center;
+    background-color: rgb(247, 247, 247);
+}
+
+.containerInfo p:nth-child(1){
+    color: rgb(68, 68, 68);
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.containerInfo p:nth-child(2){
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.containerInfo button{
+    width: 140px;
+    height: 40px;
     border: none;
-    background-color: rgb(17, 197, 17);
-    font-family: 'Poppins', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
+    border-radius: 30px;
+    background-color: rgb(29, 202, 144);
     color: #fff;
     cursor: pointer;
-    transition: 0.3s;
-}
-.containerButtonReturn button:hover{
-    background-color: rgb(16, 145, 16);
-    transition: 0.3s;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+.containerInfo button:hover{
+    background-color: rgb(60, 156, 124);
 }
 
-html,
-body {
-  height: 100vh;
-}
-
-body {
-  font-family: 'Roboto', sans-serif;
-  overflow: hidden;
-}
-
-section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
-}
-
-
-.brilho {
-    position: relative;
-    min-width: 750px;
-    height: 750;
-    margin: -150px;
-    transform-origin: right;
-    animation: corMudando 5s linear infinite;
-}
-
-@keyframes corMudando {
-  0% {
-    filter: hue-rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    filter: hue-rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-.brilho:nth-child(even) {
-    transform-origin: left;
-}
-
-.brilho span {
-    position: absolute;
-    top: calc(80px * var(--i));
-    left: calc(80px * var(--i));
-    bottom: calc(80px * var(--i));
-    right: calc(80px * var(--i));
-}
-
-.brilho span:before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: -8px;
-    width: 15px;
-    height: 15px;
-    background: #f00;
-    border-radius: 50%;
-}
-
-.brilho span:nth-child(3n + 1):before {
-    background: rgba(134,255,0,1);
-    box-shadow: 0 0 20px rgba(134,255,0,1),
-                0 0 40px rgba(134,255,0,1),
-                0 0 60px rgba(134,255,0,1),
-                0 0 80px rgba(134,255,0,1),
-                0 0 0 8px rgba(134,255,0,.1);
-}
-
-.brilho span:nth-child(3n + 2):before {
-    background: rgba(255,214,0,1);
-    box-shadow: 0 0 20px rgba(255,214,0,1),
-                0 0 40px rgba(255,214,0,1),
-                0 0 60px rgba(255,214,0,1),
-                0 0 80px rgba(255,214,0,1),
-                0 0 0 8px rgba(255,214,0,.1);
-}
-
-.brilho span:nth-child(3n + 3):before {
-    background: rgba(0,226,255,1);
-    box-shadow: 0 0 20px rgba(0,226,255,1),
-                0 0 40px rgba(0,226,255,1),
-                0 0 60px rgba(0,226,255,1),
-                0 0 80px rgba(0,226,255,1),
-                0 0 0 8px rgba(0,226,255,.1);
-}
-
-.brilho span:nth-child(3n+1) {
-    animation: animate 10s alternate infinite;
-}
-
-.brilho span:nth-child(3n+2) {
-    animation: animate-reverse 3s alternate infinite;
-}
-
-.brilho span:nth-child(3n+3) {
-    animation: animate 8s alternate infinite;
-}
-
-@keyframes animate {
+@-webkit-keyframes scale-up-hor-center {
     0% {
-        transform: rotate(0deg);
+      -webkit-transform: scaleX(0.4);
+              transform: scaleX(0.4);
     }
     100% {
-        transform: rotate(360deg);
+      -webkit-transform: scaleX(1);
+              transform: scaleX(1);
     }
-}
-@keyframes animate-reverse {
+  }
+  @keyframes scale-up-hor-center {
     0% {
-        transform: rotate(360deg);
+      -webkit-transform: scaleX(0.4);
+              transform: scaleX(0.4);
     }
     100% {
-        transform: rotate(0deg);
+      -webkit-transform: scaleX(1);
+              transform: scaleX(1);
     }
-}
-
-
-/*-----------------------*/
-#by {
-  font-family: 'Arima Madurai', cursive;
-  color: #C1D0D0;
-  font-size: 15px;
-  position: fixed;
-  top: 50%;
-}
-
-/*
-light-blue: #C1D0D0;
-dark-blue: #4A676A;
-cream: #FFEAA5;
-yellow: #FFB037;
-*/
+  }

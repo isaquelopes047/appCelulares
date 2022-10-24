@@ -41,7 +41,7 @@
                     <p>Cadastrar</p>
                 </div>
             </a>
-            <a href="">
+            <a href="./filtro.html">
                 <div class="containerMenu">
                     <img src="../icons/icons8-visualizar-arquivo-30.png" alt="">
                     <p>Buscar</p>
@@ -111,135 +111,149 @@
                 </div>
                 <div class="containerBodyMain">
                     <div class="containerAlteral">
-
-                        <form action="" method="PATCH">
-                            <div class="containerFormAlterar">
-                                <div class="containerInput">
-                                    <div class="alterar">
-                                        <p>Tecnico responsavel</p>
-                                    </div>
-                                    <div class="alterar">
-                                        <select id="nomeTecnico" name="modeloCelularAntigo" required>
-                                            <option value="Motorola Moto E5">Isaque Lopes de Souza</option>
-                                            <option value="Anderson Davidson de Moura">Anderson Davidson de Moura</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="containerInput">
-                                    <div class="alterar">
-                                        <p>Nome do Funcionario</p>
-                                    </div>
-                                    <div class="alterar">
-                                        <input type="text" id="nomeFuncionario">
-                                    </div>
-                                </div>
-                                <div class="containerInput">
-                                    <div class="alterar">
-                                        <p>Modelo do aparelho antigo</p>
-                                    </div>
-                                    <div class="alterar" id="nomeFuncionario">
-                                        <select id="modeloCelularAntigo" name="modeloCelularAntigo" required>
-                                            <option value="Motorola Moto E5">Motorola Moto E5</option>
-                                            <option value="Motorola Moto e(6) plus">Motorola Moto e(6) plus</option>
-                                            <option value="Motorola Moto e20">Motorola Moto e20</option>
-                                            <option value="Motorola Moto e6 play">Motorola Moto e6 play</option>
-                                            <option value="Motorola Moto e6s">Motorola Moto e6s</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="containerInput">
-                                    <div class="alterar">
-                                        <p>Numero do patromonio antigo</p>
-                                    </div>
-                                    <div class="alterar">
-                                        <input type="text" id="numeroPatrimonioAntigo">
-                                    </div>
-                                </div>
-                                <div class="containerInput">
-                                    <div class="alterar">
-                                        <p>Numero do celular antigo</p>
-                                    </div>
-                                    <div class="alterar">
-                                        <input type="text" id="numeroDeCelularAntigo">
-                                    </div>
-                                </div>
-                                <div class="containerInput">
-                                    <div class="alterar">
-                                        <p>Problema identificado</p>
-                                    </div>
-                                    <div class="alterar">
-                                        <select id="problemaIdentificado" name="problemaIdentificado" required>
-                                            <option value="Bateria viciada">Bateria viciada</option>
-                                            <option value="Bateria estufada">Bateria estufada</option>
-                                            <option value="Troca de Chip">Troca de Chip</option>
-                                            <option value="Conector estragado">Conector estragado</option>
-                                            <option value="Sem espaço de armazenamento">Sem espaço de armazenamento</option>
-                                            <option value="Atualização Pulsus">Atualização Pulsus</option>
-                                            <option value="GPS travando">GPS travando</option>
-                                            <option value="Não liga">Não liga</option>
-                                            <option value="Problema no Audio">Problema no Audio</option>
-                                            <option value="S.O travando">S.O travando</option>
-                                            <option value="Tela quebrada">Tela quebrada</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <div class="containerInput">
-                                    <div class="alterar"></div>
-                                    <div class="alterar"></div>
-                                </div>
-
-                                <div class="containerInput">
-                                    <div class="alterar">
-                                        <p>Modelo do aparelho novo</p>
-                                    </div>
-                                    <div class="alterar">
-                                        <select id="modeloCelularNovo" name="modeloCelularNovo" required>
-                                            <option value="Motorola Moto E5">Motorola Moto E5</option>
-                                            <option value="Motorola Moto e(6) plus">Motorola Moto e(6) plus</option>
-                                            <option value="Motorola Moto e20">Motorola Moto e20</option>
-                                            <option value="Motorola Moto e6 play">Motorola Moto e6 play</option>
-                                            <option value="Motorola Moto e6s">Motorola Moto e6s</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="containerInput">
-                                    <div class="alterar">
-                                        <p>Numero do patrimonio novo</p>
-                                    </div>
-                                    <div class="alterar">
-                                        <input type="text" id="numeroPatrimonioNovo">
-                                    </div>
-                                </div>
-                                <div class="containerInput">
-                                    <div class="alterar">
-                                        <p>Numero do celular novo </p>
-                                    </div>
-                                    <div class="alterar">
-                                        <input type="text" id="numeroDeCelularNovo">
-                                    </div>
-                                </div>
-                                <div class="containerInput">
-                                    <div class="alterar">
-                                        <p>Observação</p>
-                                    </div>
-                                    <div class="alterar">
-                                        <textarea id="observacao" name="observacao" rows="2" cols="50" placeholder="Digite aqui uma observação ou procedimento realizado" required></textarea>
-                                    </div>
-                                </div>
-                                <div class="containerInput">
-                                    <div class="alterar buttonsAlterar">
-                                        <button class="alterarContent">
-                                            <img src="../icons/icons8-salvar-30.png" alt="">
-                                            Salvar
-                                        </button>
-                                        <button class="voltarAlterar">Voltar</button>
-                                    </div>
+                        <!-- Modal de alterar o registro -->
+                        <div class="containerFormAlterar">
+                            <p class="titleAlterar">Alterar Registro</p>
+                            <div class="containerAlerta">
+                                <div class="alert alert-success" role="alert">
+                                    Registro alterado com sucesso! retornando ao registro em 2 segundos!
                                 </div>
                             </div>
-                        </form>
+
+                            <div class="containerAlertaError">
+                                <div class="alert alert-danger" role="alert">
+                                    Algo de errado aconteceu! Entre em contato com o Administrador ou tenta novamente.
+                                </div>
+                            </div>
+
+                            <div class="containerInput">
+                                <div class="alterar">
+                                    <p>Tecnico responsavel</p>
+                                </div>
+                                <div class="alterar">
+                                    <select id="nomeTecnico" name="modeloCelularAntigo" required>
+                                        <option value="Isaque Lopes de Souza">Isaque Lopes de Souza</option>
+                                        <option value="Anderson Davidson de Moura">Anderson Davidson de Moura</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="containerInput">
+                                <div class="alterar">
+                                    <p>Nome do Funcionario</p>
+                                </div>
+                                <div class="alterar">
+                                    <input type="text" id="nomeFuncionario">
+                                </div>
+                            </div>
+                            <div class="containerInput">
+                                <div class="alterar">
+                                    <p>Modelo do aparelho antigo</p>
+                                </div>
+                                <div class="alterar">
+                                    <select id="modeloCelularAntigo" name="modeloCelularAntigo" required>
+                                        <option value="Motorola Moto E5">Motorola Moto E5</option>
+                                        <option value="Motorola Moto e(6) plus">Motorola Moto e(6) plus</option>
+                                        <option value="Motorola Moto e20">Motorola Moto e20</option>
+                                        <option value="Motorola Moto e6 play">Motorola Moto e6 play</option>
+                                        <option value="Motorola Moto e6s">Motorola Moto e6s</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="containerInput">
+                                <div class="alterar">
+                                    <p>Numero do patromonio antigo</p>
+                                </div>
+                                <div class="alterar">
+                                    <input type="text" id="numeroPatrimonioAntigo">
+                                </div>
+                            </div>
+                            <div class="containerInput">
+                                <div class="alterar">
+                                    <p>Numero do celular antigo</p>
+                                </div>
+                                <div class="alterar">
+                                    <input type="text" id="numeroDeCelularAntigo">
+                                </div>
+                            </div>
+                            <div class="containerInput">
+                                <div class="alterar">
+                                    <p>Problema identificado</p>
+                                </div>
+                                <div class="alterar">
+                                    <select id="problemaIdentificado" name="problemaIdentificado" required>
+                                        <option value="Bateria viciada">Bateria viciada</option>
+                                        <option value="Bateria estufada">Bateria estufada</option>
+                                        <option value="Troca de Chip">Troca de Chip</option>
+                                        <option value="Conector estragado">Conector estragado</option>
+                                        <option value="Sem espaço de armazenamento">Sem espaço de armazenamento</option>
+                                        <option value="Atualização Pulsus">Atualização Pulsus</option>
+                                        <option value="GPS travando">GPS travando</option>
+                                        <option value="Não liga">Não liga</option>
+                                        <option value="Problema no Audio">Problema no Audio</option>
+                                        <option value="S.O travando">S.O travando</option>
+                                        <option value="Tela quebrada">Tela quebrada</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="containerInput">
+                                <div class="alterar"></div>
+                                <div class="alterar"></div>
+                            </div>
+
+                            <div class="containerInput">
+                                <div class="alterar">
+                                    <p>Modelo do aparelho novo</p>
+                                </div>
+                                <div class="alterar">
+                                    <select id="modeloCelularNovo" name="modeloCelularNovo" required>
+                                        <option value="Motorola Moto E5">Motorola Moto E5</option>
+                                        <option value="Motorola Moto e(6) plus">Motorola Moto e(6) plus</option>
+                                        <option value="Motorola Moto e20">Motorola Moto e20</option>
+                                        <option value="Motorola Moto e6 play">Motorola Moto e6 play</option>
+                                        <option value="Motorola Moto e6s">Motorola Moto e6s</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="containerInput">
+                                <div class="alterar">
+                                    <p>Numero do patrimonio novo</p>
+                                </div>
+                                <div class="alterar">
+                                    <input type="text" id="numeroPatrimonioNovo">
+                                </div>
+                            </div>
+                            <div class="containerInput">
+                                <div class="alterar">
+                                    <p>Numero do celular novo </p>
+                                </div>
+                                <div class="alterar">
+                                    <input type="text" id="numeroDeCelularNovo">
+                                </div>
+                            </div>
+                            <div class="containerInput">
+                                <div class="alterar">
+                                    <p>Observação</p>
+                                </div>
+                                <div class="alterar">
+                                    <textarea id="observacao" name="observacao" rows="2" cols="50"
+                                        placeholder="Digite aqui uma observação ou procedimento realizado"
+                                        required></textarea>
+                                </div>
+                            </div>
+                            <div class="containerInput">
+                                <div class="alterar buttonsAlterar">
+                                    <button class="alterarContent">
+                                        <img src="../icons/icons8-salvar-30.png" alt="">
+                                        Salvar
+                                    </button>
+                                    <button class="voltarAlterar">Voltar</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
+                    <!-- Modal de deletar registro -->
                     <div class="modelDelete">
                         <div class="containerContentDell">
                             <div class="containerTitle">
@@ -260,7 +274,7 @@
                         <div class="containerMainInfos">
                             <div class="ccontainerContentUm">
                                 <div class="containerInfo">
-                                    <div class="containerInfoResult styleBlock">
+                                    <div class="containerInfoResult styleBlock"> 
                                         <p for="">Tecnico responsavel</label>
                                     </div>
                                     <div class="containerInfoResult">
@@ -367,12 +381,11 @@
                     </div>
                 </div>
             </div>
-            
+
             <script src="../JS/scripts/modalDell.js"></script>
             <script src="../JS/scripts/modalAlterar.js"></script>
-            <script src="../JS/API/getPorId.js"></script>
-            <script src="../JS/API/delete.js"></script>
-            <script src="../JS/API/alterar.js"></script>
+            <script type="module" src="../JS/requisicoesAssitencias/getPorId.js"></script>
+            <script type="module" src="../JS/requisicoesAssitencias/delete.js"></script>
+            <script type="module" src="../JS/requisicoesAssitencias/alterar.js"></script>
 </body>
-
 </html>

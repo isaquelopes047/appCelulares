@@ -23,6 +23,14 @@
 
 <body>
 
+    <div class="waterfall">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
     <div class="containerAllPrincipal">
 
         <nav class="containerPrincipalNav">
@@ -38,7 +46,7 @@
                     <p>Cadastrar</p>
                 </div>
             </a>
-            <a href="">
+            <a href="./filtro.html">
                 <div class="containerMenu">
                     <img src="../icons/icons8-visualizar-arquivo-30.png" alt="">
                     <p>Buscar</p>
@@ -214,6 +222,17 @@
                                     </div>
                                 </div>
 
+                                <!-- SEC 6 -->
+                                <!-- Input de data com display none -->
+                                <div class="containerInfos cem none">
+                                    <div class="containerAllInfos">
+                                        <div class="flexInputs full">
+                                            <label for="">Data</label>
+                                            <input type="text" required name="dataEHora" value="" class="dataEHora" id="dataEHora">
+                                        </div>
+                                    </div>
+                                </div>
+
                                 <div class="containerInfos">
                                     <div class="containerAllInfos">
                                         <div class="alertContainer">
@@ -231,7 +250,8 @@
         </main>
     </div>
 
-    <script src="../JS/API/post.js"></script>
+    <script src="../JS/scripts/dataInput.js"></script>
+    <script type="module" src="../JS/requisicoesAssitencias/post.js"></script>
     <script src="../JS/scripts/alertaTela.js"></script>
     <script src="../JS/scripts/ipnutNumero.js"></script>
 </body>

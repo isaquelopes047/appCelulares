@@ -13,8 +13,8 @@
     height: 700px;
     background-color: rgb(255, 255, 255);
     margin: 0 auto;
-    -webkit-animation: scale-up-ver-center 0.1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	animation: scale-up-ver-center 0.1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    -webkit-animation: scale-up-ver-center 0.3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	animation: scale-up-ver-center 0.3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
 @-webkit-keyframes scale-up-ver-center {
@@ -37,6 +37,14 @@
               transform: scaleY(1);
     }
   }
+
+.containerFormAlterar .titleAlterar {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 25px;
+    font-style: oblique;
+}
 
 .containerInput{
     width: 100%;
@@ -97,4 +105,34 @@
 .buttonsAlterar button:nth-child(2){
     background-color:#8f8f8f;
     color: #fff;
+}
+
+/* ALERTA SUCESSO */
+.containerAlerta{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    padding: 10px;
+}
+.alert-success{
+    font-weight: bold;
+}
+
+/* ALERTA ERROR */
+.containerAlertaError{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    padding: 10px;
+}
+.alert-success{
+    font-weight: bold;
 }

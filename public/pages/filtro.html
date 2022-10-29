@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="../style/pagesStyle/layoutMain.css">
     <link rel="stylesheet" href="../style/components/manulateral.css">
     <link rel="stylesheet" href="../style/components/menuSuperior.css">
+    <link rel="stylesheet" href="../style/components/filtro.css">
+    <link rel="stylesheet" href="../style/components/status.css">
 
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
@@ -107,17 +109,50 @@
                         </nav>
                     </div>
                 </div>
-                <div class="containerBodyMain">
-                       dasdasd
-                </div>
-            </div>
+                <main>
+                    <div class="containerPrincipal">
+                        <div class="containerInputsBusca">
+                            <div class="cardInputs">
+                                <label for="">Data</label>
+                                <input type="date" class="data">
+                            </div>
+                            <div class="cardInputs">
+                                <label for="">Patrimonio</label>
+                                <input type="text">
+                            </div>
+                            <div class="cardInputs">
+                                <label for="">Nome do funcionario</label>
+                                <input type="text" class="funcionario">
+                            </div>
+                            <div class="cardInputs">
+                                <label for="">Buscar</label>
+                                <button class="pesquisa">Pesquisar</button>
+                            </div>
+                        </div>
+                        <div class="containerApresentaResultados">
+                            <table id="table">
+                                <thead>
+                                    <th>Id</th>
+                                    <th>Tecnico</th>
+                                    <th>Nome do funcionario</th>
+                                    <th>Modelo do aparelho</th>
+                                    <th>N° do aparelho</th>
+                                    <th>N° do celular</th>
+                                    <th>Problema identificado</th>
+                                    <th>Detalhes</th>
+                                </thead>
+                                <tbody class="containerTbody">
+                                    <tr class="trr">
 
-            <script src="../JS/scripts/toolip.js"></script>
-            <script src="../JS/scripts/modalDell.js"></script>
-            <script src="../JS/scripts/modalAlterar.js"></script>
-            <script src="../JS/API/getPorId.js"></script>
-            <script src="../JS/API/delete.js"></script>
-            <script src="../JS/API/alterar.js"></script>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </main>
+            </div>
+            <script type="module" src="../JS/requisicoesAssitencias/getPorData.js"></script>
+            <script type="module" src="../JS/requisicoesAssitencias/getPorFuncionario.js"></script>
 </body>
 
 </html>

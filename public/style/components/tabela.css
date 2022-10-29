@@ -15,13 +15,12 @@
 }
 
 #table td {
-    padding-bottom: 10px;
-    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
     font-family: 'Roboto', sans-serif;
     color: rgb(43, 43, 43);
     font-size: 15px;
     border-bottom: 1px solid rgba(204, 204, 204, 0.308);
-    /* border-right: 1px solid #ccc; */
 }
 
 #table td:nth-child(1){

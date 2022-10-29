@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.containerPrincipal{
+    width: calc(100vw - 80px);
+    height: 100vh;
+}
+
+.containerInputsBusca{
+    width: 100%;
+    height: 70px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cardInputs{
+    width: 350px;
+    height: auto;
+    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.cardInputs input, button{
+    width: 100%;
+    height: 50px;
+    border: none;
+    background-color: rgb(231, 231, 231);
+    outline: 0px;
+}
+.cardInputs button{
+    background-color: rgb(223, 174, 15);
+    color: #fff;
+}
+
+/* CONTAINER DE DADOS DA TABELA */
+
+.containerApresentaResultados{
+    width: 90%;
+    height: 600px;
+    background-image: url('/public/img/busca.jpg.png');
+    background-repeat: no-repeat;
+    background-position:bottom;
+    overflow-x: none;
+    overflow-y: scroll;
+}
+
+#table {
+    margin-top: 30px;
+    width: 100%;
+    background-color: rgba(252, 252, 252, 0.911);
+}
+
+#table th{
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 10px;
+    text-align: start;
+}
+#table th:nth-child(8), #table th:nth-child(1){
+    text-align: center;
+}
+
+#table td {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(43, 43, 43);
+    font-size: 15px;
+    border-bottom: 1px solid rgba(204, 204, 204, 0.308);
+}
+
+#table td:nth-child(1){
+    text-align: center;
+    background-color: green;
+    color: #fff;
+    border-radius: 3px;
+}
+
+#table td:nth-child(2){
+    text-align: center;
+}
+
+#table td:nth-child(2){
+    width: 250px;
+
+}
+
+#table td:nth-child(7){
+    color: #fff;
+}
+
+#table tr:hover {
+    -webkit-box-shadow: 2px 9px 11px -11px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 9px 11px -11px rgba(0, 0, 0, 0.75);
+    box-shadow: 2px 9px 11px -11px rgba(0, 0, 0, 0.75);
+}
+
+#table a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

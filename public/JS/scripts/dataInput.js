@@ -1,6 +1,19 @@
 
 function open_popup() {
-    var data = new Date().toLocaleString().substr(0, 10)
-    document.querySelector('.dataEHora').value = data;
+    const date = new Date();
+
+    let day = date.getDate();
+
+    let mes = date.getMonth() + 1;
+    if(mes <= 9){
+        mes = `0${mes}`;
+    } else {
+        mes = mes;
+    }
+
+    let ano = date.getFullYear();
+
+    let dataAtual = `${ano}-${mes}-${day}`
+    document.querySelector('.dataEHora').value = dataAtual;
 }
 open_popup()

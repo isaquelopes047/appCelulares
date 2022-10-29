@@ -1,5 +1,5 @@
 async function listaDados(){
-    const conexao = await fetch('http://localhost:3000/assistencias');
+    const conexao = await fetch('https://apichamados.herokuapp.com/assistencias');
 
     const conexaoConvertida = await conexao.json();
     return conexaoConvertida;
@@ -9,7 +9,7 @@ async function deletaRegistro(){
     const urlSearchOrder = new URLSearchParams(window.location.search);
     const orderParamAlt = urlSearchOrder.get("order")
 
-    const conexao = await fetch(`http://localhost:3000/assistencias/listaDelete?order=${orderParamAlt}`, {
+    const conexao = await fetch(`https://apichamados.herokuapp.com/assistencias/listaDelete?order=${orderParamAlt}`, {
             method: 'DELETE',
             Headers: {
                 Accept: 'application.json',
@@ -25,7 +25,7 @@ async function apresentaDadosDetalhes(){
     const urlSearchOrder = new URLSearchParams(window.location.search);
     const orderParam = urlSearchOrder.get("order")
 
-    const conexao = await fetch(`http://localhost:3000/assistencias/lista?order=${orderParam}`, {
+    const conexao = await fetch(`https://apichamados.herokuapp.com/assistencias/lista?order=${orderParam}`, {
             Method: 'GET',
             headers: {
                 Accept: 'application.json',
@@ -42,7 +42,42 @@ async function apresentaDados(){
     const searchOrder = new URLSearchParams(window.location.search);
     const parametroOrder = searchOrder.get("order")
 
-    const conexao = await fetch(`http://localhost:3000/assistencias/lista?order=${parametroOrder}`, {
+    const conexao = await fetch(`https://apichamados.herokuapp.com/assistencias/lista?order=${parametroOrder}`, {
+            Method: 'GET',
+            Headers: {
+                Accept: 'application.json',
+                'Content-Type': 'application/json'
+            },
+            Cache: 'default'
+        });
+
+    const conexaoConvertida = await conexao.json();
+    return conexaoConvertida;
+}
+
+async function filtrarDadoPorFuncionario(){
+
+    let funcionario = document.querySelector('.funcionario').value
+    const conexao = await fetch(`https://apichamados.herokuapp.com/assistencias/busca?nomeFuncionario=${funcionario}`, {
+            Method: 'GET',
+            Headers: {
+                Accept: 'application.json',
+                'Content-Type': 'application/json'
+            },
+            Cache: 'default'
+        });
+
+    const conexaoConvertida = await conexao.json();
+    return conexaoConvertida;
+}
+
+async function filtrarDadoPorData(){
+
+    let funcionario = document.querySelector('.data').value
+
+    console.log(funcionario)
+
+    const conexao = await fetch(`https://apichamados.herokuapp.com/assistencias/listaData?dataEHora=${funcionario}`, {
             Method: 'GET',
             Headers: {
                 Accept: 'application.json',
@@ -70,7 +105,7 @@ async function alteraDados(){
     let numeroDeCelularNovo = document.querySelector('#numeroDeCelularNovo').value;
     let observacao = document.querySelector('#observacao').value;
 
-    const conexao = await fetch(`http://localhost:3000/assistencias/alterar?order=${parametroOrder}`, {
+    const conexao = await fetch(`https://apichamados.herokuapp.com/assistencias/alterar?order=${parametroOrder}`, {
                 method: 'PATCH',
                 headers: {
                     Accept: 'application.json',
@@ -108,7 +143,7 @@ async function cadastrarNovaAssistencia(){
     let observacao = document.getElementById('observacao').value
     let dataEHora = document.getElementById('dataEHora').value
 
-    const conexao = await fetch('http://localhost:3000/assistencias', {
+    const conexao = await fetch('https://apichamados.herokuapp.com/assistencias', {
         method: 'POST',
         headers: {
             'Accept': 'application/json',
@@ -140,5 +175,7 @@ export const conectaApi = {
     apresentaDadosDetalhes,
     apresentaDados,
     alteraDados,
-    cadastrarNovaAssistencia
+    cadastrarNovaAssistencia,
+    filtrarDadoPorFuncionario,
+    filtrarDadoPorData
 }

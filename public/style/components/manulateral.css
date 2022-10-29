@@ -3,11 +3,14 @@
 .containerPrincipalNav{
     width: 150px;
     height: 100vh;
-    background-color:rgba(231, 231, 231, 0.349);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    -webkit-box-shadow: 6px 0px 5px 0px rgb(0 0 0 / 75%);
+    -moz-box-shadow: 6px 0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 3px -2px 12px 0px rgb(229 229 229 / 75%);
+    z-index: 999;
 }
 
 .containerPrincipalNav a{

@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap');
+
+.containerDashMain{
+    width: calc(100vw - 80px);
+    height: 100vh;
+}
+
+.containerSuperiorDados{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.containerCardUm{
+    width: 300px;
+    height: 100px;
+    background-color: yellow;
+    display: flex;
+}
+.containerUmIcon {
+    width: 100px;
+    height: 100px;
+    background-color: #317ee6;
+}
+.containerUmInfo{
+    width: 200px;
+    height: 100px;
+    background-color: #5d9ceb;
+}
+
+/* Dois */
+.containerCardDois{
+    width: 300px;
+    height: 100px;
+    background-color: yellow;
+    display: flex;
+}
+.containerDoisIcon{
+    width: 100px;
+    height: 100px;
+    background-color: #5649a1;
+}
+.containerDoisInfo{
+    width: 200px;
+    height: 100px;
+    background-color: #7266ba;
+}
+
+/* Tres */
+.containerCardTres{
+    width: 300px;
+    height: 100px;
+    background-color: yellow;
+    display: flex;
+}
+.containerTresIcon{
+    width: 100px;
+    height: 100px;
+    background-color: #27977b;
+}
+.containerTresInfo{
+    width: 200px;
+    height: 100px;
+    background-color: #36bc9b;
+}
+
+/* Quatro */
+.containerCardQuatro{
+    width: 300px;
+    height: 100px;
+    background-color: yellow;
+    display: flex;
+}
+.containerQuatroIcon{
+    width: 100px;
+    height: 100px;
+    background-color: #e08e12;
+}
+.containerQuatroInfo{
+    width: 200px;
+    height: 100px;
+    background-color: #efad4d;
+}
+
+

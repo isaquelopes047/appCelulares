@@ -15,28 +15,41 @@
     flex-wrap: wrap;
 }
 
+/* Um */
 .containerCardUm{
     width: 300px;
     height: 100px;
-    background-color: yellow;
     display: flex;
 }
 .containerUmIcon {
     width: 100px;
     height: 100px;
     background-color: #317ee6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .containerUmInfo{
     width: 200px;
     height: 100px;
     background-color: #5d9ceb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
+    .containerUmInfo p:nth-child(1){
+        color: red;
+    }
+    .containerUmInfo p:nth-child(2){
+        color: rgb(204, 224, 22);
+    }
 
 /* Dois */
 .containerCardDois{
     width: 300px;
     height: 100px;
-    background-color: yellow;
     display: flex;
 }
 .containerDoisIcon{
@@ -48,13 +61,16 @@
     width: 200px;
     height: 100px;
     background-color: #7266ba;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 /* Tres */
 .containerCardTres{
     width: 300px;
     height: 100px;
-    background-color: yellow;
     display: flex;
 }
 .containerTresIcon{
@@ -66,13 +82,16 @@
     width: 200px;
     height: 100px;
     background-color: #36bc9b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 /* Quatro */
 .containerCardQuatro{
     width: 300px;
     height: 100px;
-    background-color: yellow;
     display: flex;
 }
 .containerQuatroIcon{
@@ -84,6 +103,10 @@
     width: 200px;
     height: 100px;
     background-color: #efad4d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 

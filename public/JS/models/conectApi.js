@@ -74,9 +74,6 @@ async function filtrarDadoPorFuncionario(){
 async function filtrarDadoPorData(){
 
     let funcionario = document.querySelector('.data').value
-
-    console.log(funcionario)
-
     const conexao = await fetch(`https://apichamados.herokuapp.com/assistencias/listaData?dataEHora=${funcionario}`, {
             Method: 'GET',
             Headers: {
@@ -88,6 +85,37 @@ async function filtrarDadoPorData(){
 
     const conexaoConvertida = await conexao.json();
     return conexaoConvertida;
+}
+
+async function apresentaData(){
+
+    const date = new Date();
+
+    let dataAtual = pegaData();
+
+    const conexao = await fetch(`https://apichamados.herokuapp.com/assistencias/listaData?dataEHora=${dataAtual}`, {
+            Method: 'GET',
+            Headers: {
+                Accept: 'application.json',
+                'Content-Type': 'application/json'
+            },
+            Cache: 'default'
+        });
+
+    const conexaoConvertida = await conexao.json();
+    return conexaoConvertida;
+
+    function pegaData() {
+        let day = date.getDate();
+        let mes = date.getMonth() + 1;
+        if (mes <= 9)
+            mes = `0${mes}`;
+        else
+            mes = mes;
+        let ano = date.getFullYear();
+        let dataAtual = `${ano}-${mes}-${day}`;
+        return dataAtual;
+    }
 }
 
 async function alteraDados(){
@@ -177,5 +205,6 @@ export const conectaApi = {
     alteraDados,
     cadastrarNovaAssistencia,
     filtrarDadoPorFuncionario,
-    filtrarDadoPorData
+    filtrarDadoPorData,
+    apresentaData
 }

@@ -48,7 +48,7 @@
                     <p>Buscar</p>
                 </div>
             </a>
-            <a href="">
+            <a href="./dashboard.html">
                 <div class="containerMenu">
                     <img src="../icons//icons8-gráfico-de-barras-do-cloud-30.png" alt="">
                     <p>Resumo</p>
@@ -111,8 +111,6 @@
                     </div>
                 </div>
                 <div class="containerBodyMain">
-                    
-                    <!-- <div id="graficoColuna"></div> -->
                     <!-- CARDS DASHBOARD SUPERIOR -->
                     <div class="containerDashMain">
                         <div class="containerSuperiorDados">
@@ -122,17 +120,18 @@
                                     <img src="/public/icons/icons8-selecionado-30.png" alt="">
                                 </div>
                                 <div class="containerUmInfo">
-                                    <p>ASSISTENCIA TOTAL</p>
-                                    <p>0</p>
+                                    <p>ASSISTENCIAS TOTAL</p>
+                                    <p class="TotalAssistencia"></p>
                                 </div>
                             </div>
 
                             <div class="containerCardDois">
                                 <div class="containerDoisIcon">
-                                    
+                                    <img src="/public/icons/icons8-calendário-de-folgas-60.png" alt="">
                                 </div>
                                 <div class="containerDoisInfo">
-                                    
+                                    <p>TOTAL DO DIA</p>
+                                    <p class="dataAssistencia"></p>
                                 </div>
                             </div>
 
@@ -156,14 +155,16 @@
                     
                         </div>
                         <div class="containerInferiorDados">
-                            
+                            <div id="graficoColuna"></div>
+                            <div id="graficoColuna"></div>
                         </div>
                     </div>
 
                 </div>
             </div>
         
-        <script src="../JS/requisicoesAssitencias/googleChat/columChart.js"></script>
+        <script type="module" src="../JS/requisicoesAssitencias/googleChat/columChart.js"></script>
+        <script type="module" src="../JS/requisicoesAssitencias/googleChat/painelSuperior.js"></script>
 </body>
 
 </html>

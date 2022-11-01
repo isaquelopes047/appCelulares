@@ -13,6 +13,7 @@ listaRegistros();
 async function listaRegistrosDataAtual() {
     try {
         const urlConvertida = await conectaApi.apresentaData();
+        console.log(urlConvertida)
 
         let total = document.querySelector('.dataAssistencia');
         total.innerHTML = urlConvertida.length;

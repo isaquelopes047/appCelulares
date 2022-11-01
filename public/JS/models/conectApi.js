@@ -108,13 +108,23 @@ async function apresentaData(){
     function pegaData() {
         let day = date.getDate();
         let mes = date.getMonth() + 1;
-        if (mes <= 9)
-            mes = `0${mes}`;
-        else
-            mes = mes;
         let ano = date.getFullYear();
-        let dataAtual = `${ano}-${mes}-${day}`;
-        return dataAtual;
+
+        if (mes <= 9 && day <= 9){
+            let dataAtual = `${ano}-0${mes}-0${day}`;
+            return dataAtual;
+        }
+
+        if (day <= 9){
+            let dataAtual = `${ano}-${mes}-0${day}`;
+            return dataAtual;
+        }
+
+        if (mes <= 9){
+            let dataAtual = `${ano}-0${mes}-${day}`;
+            return dataAtual;
+        }
+        else mes = mes;
     }
 }
 

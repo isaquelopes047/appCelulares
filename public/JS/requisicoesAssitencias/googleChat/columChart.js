@@ -32,7 +32,7 @@ async function filtrarDadoPorData(){
             
             let opcoes = {
                 title: 'Resumo de assistencias prestadas',
-                width: 1000,
+                width: 800,
                 height: 600,
                 vAxis: {
                         gridlines: {

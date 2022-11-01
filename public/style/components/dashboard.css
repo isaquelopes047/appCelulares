@@ -143,6 +143,11 @@
     height: auto;
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
+    display: flex;
+}
+.graficoUm{
+    width: 50%;
+    height: 600px;
 }
 
 

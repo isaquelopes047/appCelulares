@@ -1,7 +1,6 @@
 import { conexoes } from './conexoes.js'
 
 async function filtrarDadoPorData(){
-
     google.charts.load('current', {packages: ['corechart'], 'language': 'pt'});
 
     const conexao = await conexoes.Telaquebrada();
@@ -11,9 +10,7 @@ async function filtrarDadoPorData(){
     const conexao5 = await conexoes.Naoliga();
 
         try {
-
             let { dados, dados2, dados3, dados4, dados5 } = await functionConexoes();
-
             let tabela = new google.visualization.DataTable();
             
             tabela.addColumn('string', 'Categorias');
@@ -29,7 +26,6 @@ async function filtrarDadoPorData(){
             ]);
             
             tabela.sort([{ column: 1, desc: true }]); // estou ordenando as 
-            
             let opcoes = {
                 title: 'Resumo de assistencias prestadas',
                 width: 800,
@@ -55,7 +51,6 @@ async function filtrarDadoPorData(){
             
             let grafico = new google.visualization.BarChart(document.getElementById('graficoColuna'));
             grafico.draw(tabela, opcoes);
-            
             google.charts.setOnLoadCallback(desenharGrafico);
 
         } catch (err) {}

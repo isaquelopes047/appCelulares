@@ -10,6 +10,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="icon" type="image/x-icon" href="../icons/favi.png">
+
     <link rel="stylesheet" href="../style/pagesStyle/layoutMain.css">
     <link rel="stylesheet" href="../style/components/manulateral.css">
     <link rel="stylesheet" href="../style/components/menuSuperior.css">
@@ -22,13 +24,19 @@
     <!------ Include the above in your HEAD tag ---------->
 
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <title>Document</title>
+    <title>Detalhes</title>
 </head>
 
 <body>
     <div class="containerAllPrincipal">
 
         <nav class="containerPrincipalNav">
+            <a href="./dashboard.html">
+                <div class="containerMenu">
+                    <img src="../icons//icons8-gráfico-de-barras-do-cloud-30.png" alt="">
+                    <p>Resumo</p>
+                </div>
+            </a>
             <a href="./paginaDeDados.html">
                 <div class="containerMenu">
                     <img src="../icons/icons8-criptografia-de-dados-30.png" alt="">
@@ -45,12 +53,6 @@
                 <div class="containerMenu">
                     <img src="../icons/icons8-visualizar-arquivo-30.png" alt="">
                     <p>Buscar</p>
-                </div>
-            </a>
-            <a href="./dashboard.html">
-                <div class="containerMenu">
-                    <img src="../icons//icons8-gráfico-de-barras-do-cloud-30.png" alt="">
-                    <p>Resumo</p>
                 </div>
             </a>
         </nav>
@@ -372,22 +374,23 @@
                             </div>
                             <div class="ccontainerContentDois">
                                 <div class="containerInfo">
-                                    <button class="openModelDelete">Excluir registro</button>
-                                    <button class="openModalAlterar">Alterar registro</button>
-                                    <button class="gerar">Imprimir</button>
+                                    <button class="openModelDelete"><img src="../icons/icons8-resíduos-30.png">Excluir registro</button>
+                                    <button class="openModalAlterar"><img src="../icons/icons8-ponta-do-lápis-20.png">Alterar registro</button>
+                                    <button class="gerar"><img src="../icons/icons8-impressor-de-etiquetas-20.png">Imprimir</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.4.1/jspdf.debug.js" integrity="sha384-THVO/sM0mFD9h7dfSndI6TS0PgAGavwKvB5hAxRRvc0o9cPLohB0wb/PTA7LdUHs" crossorigin="anonymous"></script>
-            <script type="module" src="../JS/requisicoesAssitencias/geraPdf.js"></script>
-            <script src="../JS/scripts/modalDell.js"></script>
-            <script src="../JS/scripts/modalAlterar.js"></script>
-            <script type="module" src="../JS/requisicoesAssitencias/getPorId.js"></script>
-            <script type="module" src="../JS/requisicoesAssitencias/delete.js"></script>
-            <script type="module" src="../JS/requisicoesAssitencias/alterar.js"></script>
+        </main>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.4.1/jspdf.debug.js" integrity="sha384-THVO/sM0mFD9h7dfSndI6TS0PgAGavwKvB5hAxRRvc0o9cPLohB0wb/PTA7LdUHs" crossorigin="anonymous"></script>
+    <script type="module" src="../JS/requisicoesAssitencias/geraPdf.js"></script>
+    <script src="../JS/scripts/modalDell.js"></script>
+    <script src="../JS/scripts/modalAlterar.js"></script>
+    <script type="module" src="../JS/requisicoesAssitencias/getPorId.js"></script>
+    <script type="module" src="../JS/requisicoesAssitencias/delete.js"></script>
+    <script type="module" src="../JS/requisicoesAssitencias/alterar.js"></script>
 </body>
 </html>

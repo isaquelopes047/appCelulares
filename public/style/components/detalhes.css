@@ -44,10 +44,12 @@
     width: 100%;
     height: auto;
     display: flex;
+    justify-content: flex-end;
 }
 
 .containerInfo button{
-    margin-left:30px;
+    margin-right:30px;
+    display: flex;
 }
 /* BOTÃO DE EXCLUIR */
 .containerInfo button:nth-child(1){

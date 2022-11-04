@@ -24,7 +24,7 @@ function gerarPdf(data) {
 
     doc.addImage(imgData, 'JPEG', 60, 10, 100, 24)
 
-    doc.setFontSize(20)
+    doc.setFontSize(18)
     doc.setFontType("italic")
     var width = doc.internal.pageSize.getWidth()
     doc.text('FICHA PARA TROCA DE CELULAR  ', width/2, 50, { align: 'center' })
@@ -58,7 +58,7 @@ function gerarPdf(data) {
     doc.text(70, 239, `x _________________________`)
     doc.text(93, 247, `Assinatura`)
 
-    doc.save('Test.pdf');
+    doc.save('trocaDePatrimonio.pdf');
 }
 
 button.addEventListener('click', () => listaRegistros())
